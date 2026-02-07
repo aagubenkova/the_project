@@ -94,7 +94,7 @@ print(f'Количество токенов в тексте: {len(words)}')
 print(f'Количество уникальных токенов в тексте: {len(set(words))}')
 
 
-#Сохраним слова которые встречаются больше чем сколько то раз
+#слова которые встречаются больше чем сколько то раз
 frequent_tokens = []
 for token, frequency in word_frequencies.items():
     if frequency >= 30:
@@ -119,5 +119,6 @@ plt.figure(figsize=(10, 8))
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
 plt.show() 
+
 
 
